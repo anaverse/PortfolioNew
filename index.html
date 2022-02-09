@@ -28,7 +28,7 @@
     <link href="vendor/aos/aos.css" rel="stylesheet" />
 
     <!-- Link for Main CSS -->
-    <link href="PortfolioNew/css/styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -38,15 +38,78 @@
     </button>
 
     <!-- Header -->
-    <div class="header">
+    <header id="header">
       <div class="d-flex flex-column">
-        <img
-          src="img/myprofile.img.jpg"
-          alt="Ana's image"
-          class="img-fluid rounded-circle"
-        />
-        <h1 class="text-light>"><a href="index.html">Ana D'Oliveira</a></h1>
+        <div class="profile">
+          <img
+            src="img/myprofile.img.jpg"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="index.html">Ana D'Oliveira</a></h1>
+
+          <!--social icons-->
+          <div class="social-links mt-3 text-center">
+            <a href="#" class="behance"><i class="bx bxl-behance"></i></a>
+            <a href="#" class="dribble"><i class="bx bxl-dribbble"></i></a>
+
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!--Nav Bar-->
+        <nav class="nav-menu">
+          <ul>
+            <li class="active">
+              <a href="index.html"
+                ><i class="bx bx-home"></i><span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="#about"><i class="bx bx-user"></i><span>About</span></a>
+            </li>
+            <li>
+              <a href="#resume"
+                ><i class="bx bx-file-blank"></i><span>Resume</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio"
+                ><i class="bx bx-book-content"></i><span>Portfolio</span></a
+              >
+            </li>
+
+            <li>
+              <a href="#contact"
+                ><i class="bx bx-envelope"></i><span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav menu-->
+
+        <button type="button" class="mobile-nav-toggle d-xl-none">
+          <i class="icofont-navigation-menu"></i>
+        </button>
       </div>
-    </div>
+    </header>
+    <!--End of header-->
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="d-flex flex-colum justify-content-center ilign-items-center"
+    >
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Ana D'oliveira</h1>
+        <p>
+          I'm
+          <span class="typed" data-typed-items="Marketer, Designer, Freelancer">
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!--End HERO-->
   </body>
 </html>
